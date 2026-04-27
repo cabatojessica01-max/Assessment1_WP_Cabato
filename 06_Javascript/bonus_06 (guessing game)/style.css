@@ -1,0 +1,28 @@
+/* Basic page */
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+/* boxes container */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* color boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+/* message */
+#message {
+  font-size: 18px;
+  margin-top: 20px;
+}
