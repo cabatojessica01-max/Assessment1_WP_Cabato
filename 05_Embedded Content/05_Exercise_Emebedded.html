@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>calm rain video</title>
+
+  <style>
+    /* centers the video both horizontally and vertically */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* horizontal center */
+      align-items: center;      /* vertical center */
+      background: #0f172a;      /* dark background for calm mood */
+    }
+
+    /* styling for the video player */
+    video {
+      width: 700px;             /* default size of video */
+      max-width: 90%;           /* makes it responsive on small screens */
+      border-radius: 12px;      /* smooth rounded corners */
+      box-shadow: 0 0 25px rgba(0,0,0,0.5); /* soft shadow for depth */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- video element:
+       src = local video file (must be downloaded)
+       loop = repeats video automatically
+       controls = shows play/pause button
+       poster = image shown before video plays -->
+  <video 
+    src="rain.mp4"
+    loop
+    controls
+    poster="rain-poster.jpg">
+  </video>
+
+</body>
+</html>
