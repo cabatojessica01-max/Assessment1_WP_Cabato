@@ -1,0 +1,47 @@
+body {
+    font-family: arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    /* sets overall page styling */
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* adds spacing below title */
+}
+
+.gallery {
+    display: flex; /* arranges images in a row */
+    justify-content: center;
+    gap: 20px; /* space between cards */
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.card {
+    width: 300px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    /* makes each image container look like a card */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+
+    filter: grayscale(30%) brightness(1.1);
+    /* changes image appearance using css filter */
+    transition: 0.3s;
+    /* smooth animation effect */
+}
+
+.card img:hover {
+    filter: none;
+    transform: scale(1.03);
+    /* removes filter and slightly zooms image on hover */
+}
