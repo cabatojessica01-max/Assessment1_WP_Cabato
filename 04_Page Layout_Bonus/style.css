@@ -1,0 +1,127 @@
+/* reset spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page style */
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* header */
+.header {
+  background: #667eea;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+/* navigation */
+.navbar {
+  background: #333;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #555;
+}
+
+/* main layout (3 columns) */
+.main-content {
+  display: flex;
+  gap: 15px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.column {
+  flex: 1;
+  background: white;
+  padding: 15px;
+}
+
+.column-middle {
+  flex: 1.2;
+}
+
+/* section titles */
+.column h2 {
+  margin-bottom: 10px;
+  color: #667eea;
+}
+
+/* boxes/items */
+.info-box,
+.study-item,
+.deadline-item {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid #667eea;
+}
+
+/* text */
+.study-item h3,
+.deadline-item h3 {
+  font-size: 16px;
+}
+
+.study-item p,
+.deadline-description {
+  font-size: 13px;
+  color: #666;
+}
+
+/* button */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* footer */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* mobile layout */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+}
